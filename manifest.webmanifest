@@ -1,0 +1,17 @@
+{
+  "name": "APNA AI ZAIN",
+  "short_name": "APNA AI",
+  "description": "Installable APNA AI web app for Q&A, video planning, and image prompts.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#060606",
+  "theme_color": "#060606",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

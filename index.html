@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="APNA AI by Zain — installable black-theme AI web app for smart answers, image prompts, and long video planning."
+    />
+    <meta name="theme-color" content="#060606" />
+    <meta name="keywords" content="apna ai zain download, apna ai, ai app, pwa" />
+    <link rel="canonical" href="https://YOUR_GITHUB_USERNAME.github.io/ZEW-FLASH-GP/" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <title>APNA AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="brand">APNA AI</p>
+      <h1>APNA AI ZAIN — Intelligent AI World</h1>
+      <p class="subtitle">
+        Install on mobile and PC browser. Build long-form video plans, generate
+        image prompts, and get instant answers.
+      </p>
+      <div class="hero-actions">
+        <button id="installBtn" class="secondary" hidden>Install App</button>
+        <button id="autoInsightBtn">Generate Auto Insight</button>
+      </div>
+      <p id="installStatus" class="muted" role="status" aria-live="polite"></p>
+    </header>
+
+    <main>
+      <section class="panel grid" aria-label="Core features">
+        <article>
+          <h2>Unlimited Video Planner</h2>
+          <p>Create long-duration videos with chapters, hooks, and script notes.</p>
+        </article>
+        <article>
+          <h2>Picture Prompt Studio</h2>
+          <p>Generate high-quality image prompts with style and camera details.</p>
+        </article>
+        <article>
+          <h2>Smart Q&A</h2>
+          <p>Ask anything and get fast structured responses.</p>
+        </article>
+        <article>
+          <h2>Auto Suggestions</h2>
+          <p>Get proactive ideas even when no question is asked.</p>
+        </article>
+      </section>
+
+      <section class="panel" aria-label="Interactive AI tools">
+        <h2>Try APNA AI</h2>
+        <div class="tabs" role="tablist" aria-label="AI modes">
+          <button class="tab active" role="tab" aria-selected="true" data-mode="qa">Q&A</button>
+          <button class="tab" role="tab" aria-selected="false" data-mode="video">Video</button>
+          <button class="tab" role="tab" aria-selected="false" data-mode="image">Image</button>
+        </div>
+
+        <label for="questionInput">Enter your request</label>
+        <div class="input-row">
+          <input id="questionInput" type="text" placeholder="Example: make 2 hour history video plan" />
+          <button id="askBtn">Run</button>
+        </div>
+        <div id="answerBox" class="answer-box" role="status" aria-live="polite">
+          APNA AI is ready. Select a mode and run.
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>APNA AI • Black Edition • Installable PWA</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

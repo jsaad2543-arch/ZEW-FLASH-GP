@@ -45,6 +45,31 @@ Agar aap poori tarah free website banana chahte ho, yeh fastest route hai:
    - Backend free tier pe rakho (Render/Railway).
    - Start me "shared resources + queue" model rakho taki free plan stable rahe.
 
+## One-command launch + test (Roman Urdu)
+Aap ne bola tha "launch karo, link do, test karo" — is ke liye scripts add ki gayi hain:
+
+1. **Launch local live server**
+```bash
+./scripts/launch_local.sh
+```
+Live local link: `http://127.0.0.1:4173`
+
+2. **Smoke test run karo** (dusri terminal mein)
+```bash
+./scripts/smoke_test.sh
+```
+Ye `index`, `script.js`, aur `manifest` check karta hai.
+
+3. **Agar error aaye**
+- Port busy ho to:
+  ```bash
+  ./scripts/launch_local.sh 5173
+  ./scripts/smoke_test.sh 5173
+  ```
+- Browser cache clear karo (PWA/service-worker stale cache issue ke liye).
+
+> Note: Public internet "live" link (GitHub Pages/Vercel) tab milega jab repo remote pe push hoga.
+
 ## Google visibility note
 Google indexing can take time. To improve discoverability for queries like `apna ai zain download`:
 - Keep the site live and public.
